@@ -1,0 +1,58 @@
+.projects-area{
+    .projects{
+        display: grid;
+        grid-template-columns: repeat(3,33%);
+        .single-project{
+            height: 300px;
+            background-size: cover;
+            background-position: center;
+            z-index: 2;
+            position: relative;
+            &:hover{
+                .project-content{
+                    visibility: visible;
+                    opacity: 1;
+                    transform: scale(1);
+                }
+            }
+            .project-content{
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                width: 100%;
+                color: #fff;
+                transition: 0.3s;
+                z-index: 2;
+                opacity: 0;
+                visibility: hidden;
+                transform: scale(0);
+                &:before{
+                    position: absolute;
+                    content: "";
+                    height: 100%;
+                    width: 100%;
+                    background-color: #333;
+                    opacity: 0.75;
+                    z-index: -1;
+                }
+                a{
+                    font-size: 24px;
+                    color: #fff;
+                }
+                h4{
+                    text-transform: capitalize;
+                    margin-top: 10px;
+                    text-align: center;
+                    span{
+                        font-size: 16px;
+                        text-transform: lowercase;
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}

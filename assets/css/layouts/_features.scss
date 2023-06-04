@@ -1,0 +1,50 @@
+.feature-area{
+    background-color: #f2f2f2;
+    position: relative;
+    .section-title{
+        width: 100%;
+    }
+    &:before{
+        position: absolute;
+        background-image:url(../../assets/img/feature-1.jpg);
+        content: "";
+        height: 100%;
+        width: 50%;
+        background-size: cover;
+        background-position: center;
+        right: 0;
+        top: 0;
+        z-index: 1;
+    }
+    &:after{
+        position: absolute;
+        content: "";
+        height: 100%;
+        width: 50%;
+        right: 0;
+        top: 0;
+        background-color: #333;
+        opacity: 0.75;
+        z-index: 2;
+    }
+    .feature{
+        display: grid;
+        grid-template-columns: 45% 45%;
+        column-gap: 5%;
+        .features-box{
+            display: grid;
+            grid-template-columns: repeat(2,48%);
+            grid-gap: 30px;
+            .single-feature{
+                margin-bottom: 30px;
+                i{
+                    font-size: 20px;
+                }
+                h4{
+                    text-transform: capitalize;
+                    margin: 7px 0;
+                }
+            }
+        }
+    }
+}

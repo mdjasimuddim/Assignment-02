@@ -1,0 +1,236 @@
+@media only screen and (min-width:992px) and (max-width:1200px){
+    .container{
+        width: 970px;
+    }
+    .banner-content p{
+        text-align: center;
+    }
+    .about-area .about .about-img:after{
+        display: none;
+    }
+    .process-area .process{
+        grid-template-columns: repeat(4,auto);
+    }
+    .contact-area .contact{
+        grid-template-columns: repeat(2,auto);
+    }
+   
+}
+
+@media only screen and (min-width:768px) and (max-width:991px){
+    .container{
+        width: 750px;
+    }
+    .slicknav_menu{
+        display: block;
+        position: fixed;
+        z-index: 999;
+        right: 0;
+        width: 100%;
+        background-color: transparent;
+    }
+    .slicknav_menu ul{
+        background-color: #333;
+    }
+
+    .menu{
+        display: none;
+    }
+    .header-area.sticky{
+        background-color: #333;
+        padding: 28px 0;
+        position: fixed;
+        top: 0;
+        box-sizing: border-box;
+        width: 100%;
+        display: inline-block;
+    }
+    
+    .header-area .header .logo a {
+        position: fixed;
+        top: 15px;
+    }
+    .banner-area .banner-content{
+        text-align: center;
+    }
+    .banner-area .banner-content h1 {
+        font-size: 45px;
+    }
+    .banner-area .banner-content p{
+        text-align: center;
+    }
+    .about-area .about .about-img:after{
+        display: none;
+    }
+    .about img{
+        height: 350px;
+    }
+    .blog-area .blog .single-blog .blog-img .blog-meta {
+        margin: 0 18px;  
+        margin-top: -25px;
+        margin-bottom: 25px;
+    }
+    .blog-meta i{
+        font-size: 16px;
+    }
+    .testimonials-area .testimonials .single-testimonial {
+        padding: 30px 20px;
+    }
+    .testimonials-area .testimonials .single-testimonial .author-info h4 span {
+        font-size: 14px;
+    }
+    .testimonials-area .testimonials .single-testimonial .author-info h4 {
+        font-size: 16px;
+    }
+    .process-area .process{
+        grid-template-columns: repeat(4,auto);
+    }
+    .contact-area .contact .contact-address {
+        grid-gap: 30px;
+    }
+    .contact-area .contact{
+        grid-template-columns: auto;
+        grid-gap: 30px;
+    }
+}
+
+
+
+@media only screen and (max-width:767px){
+    .container{
+        width: 300px;
+    }
+    .slicknav_menu{
+        display: block;
+        display: block;
+        position: fixed;
+        z-index: 999;
+        right: 0;
+        width: 100%;
+        background-color: transparent;
+    }
+    .slicknav_menu ul{
+        background-color: #333;
+    }
+    .menu{
+        display: none;
+        
+    }
+    .header-area.sticky{
+        background-color: #333;
+        padding: 28px 0;
+        position: fixed;
+        top: 0;
+        box-sizing: border-box;
+        width: 100%;
+        display: inline-block;
+    }
+    .header-area .header .logo a {
+        position: fixed;
+        top: 15px;
+    }
+    .banner-area .banner-content{
+        text-align: center;
+    }
+    .banner-area .banner-content h1 {
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .section-title {
+        margin: 0 auto 50px;
+        width: 300px;
+    }
+   .about-content p:nth-child(4){
+        display: none;
+    }
+    .about-area .about .about-img:after{
+        display: none;
+    }
+    .about {
+        grid-template-columns: auto;
+        grid-gap: 15px;
+    }
+    .about .about-content h4 {
+        font-size: 22px;
+    }
+    .about .about-img img {
+        height: 300px;
+    }
+    .about-bottom {
+        grid-template-columns: auto;
+        grid-gap: 5%;
+    }
+    .about-bottom .single-about h4 {
+        margin: 14px 0;
+    }
+    .feature-area:before,.feature-area:after{
+        display: none;
+    }
+    .feature-area .feature {
+        grid-template-columns: auto;
+    }
+    .services-area .services {
+        grid-template-columns: auto;
+    }
+    .process-area .process {
+        grid-template-columns: auto;
+        grid-row-gap: 20px;
+    }
+    .projects-area .projects {
+        grid-template-columns: auto;
+        grid-row-gap: 20px;
+    }
+    .counter-area .counter {
+        grid-template-columns: auto;
+        row-gap: 30px;
+    }
+    .team-area .teams {
+        grid-template-columns: auto;
+        row-gap: 30px;
+    }
+    .video-area .video {
+        width: 300px;
+    }
+    .video-area .video h4 {
+        font-size: 30px;
+        margin: 15px 0;
+        font-weight: 500;
+    }
+    .prices-area .prices {
+        grid-template-columns: auto;
+        row-gap: 30px;
+    }
+    .prices-area .prices .single-price ul li {
+        font-size: 14px;
+        /* border-bottom: 1px dotted #ddd; */
+        margin-bottom: 8px;
+        padding-bottom: 8px;
+    }
+    .blog-area .blog {
+        grid-template-columns: auto;
+        row-gap: 30px;
+    }
+    .subscribe-area .subscribe {
+        width: 300px;
+    }
+    .subscribe-area .subscribe input[type="submit"] {
+        padding: 11px 14px;
+    }
+    .contact-area .contact{
+        grid-template-columns: 100%;
+        grid-gap: 30px;
+    }
+    .contact-area .contact .contact-address {
+        grid-template-columns: auto;
+        grid-gap: 30px;
+    }
+    .contact-area .contact .contact-address .single-contact i {
+        padding: 14px;
+        font-size: 22px;
+    }
+}
+@media only screen and (min-width:480px) and (max-width:767px){
+    .container{
+        width: 450px;
+    }
+}

@@ -1,0 +1,95 @@
+.testimonials-area{
+    @include bg;
+    color: #fff;
+    .testimonials{
+        // display: grid;
+        // grid-template-columns: repeat(3,auto);
+        // column-gap: 30px;
+        
+        .single-testimonial{
+            text-align: center;
+            border: 1px solid #ddd;
+            padding:30px;
+            i{
+                font-size: 50px;
+            }
+            p{
+                margin: 10px 0;
+            }
+            .author-info{
+                display: flex;
+                align-items:center;
+                justify-content: center;
+                img{
+                    width: 60px;
+                    border-radius: 50%;
+                    
+                }
+                h4{
+                    text-transform: capitalize;
+                    text-align: left;
+                    margin-left: 13px;
+                    font-size: 20px;
+                    line-height: 22px;
+                    span{
+                        display: block;
+                        font-size: 18px;
+                        font-weight: 400;
+                        text-transform: lowercase;
+                    }
+                }
+            }
+        }
+    }
+}
+.slick-dots{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+    li{
+        display: inline-block;
+        cursor: pointer;
+        margin: 0 5px;
+        &.slick-active{
+            button{
+                background-color: #ff7720;
+                color: #fff;
+            }
+        }
+        button{
+            background-color: #ddd;
+            border: 0;
+            width: 20px;
+            height: 20px;
+            line-height: 20px;
+            border-radius: 50%;
+            text-align: center;
+            cursor: pointer;
+        }
+    }
+}
+.slick-slide{
+    margin: 0 15px;
+}
+.slick-arrow{
+            background-color: #ff7720;
+            border: 0;
+            color: #fff;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            &.slick-prev{
+                left: -70px;
+            }
+            &.slick-next{
+                right: -70px;
+            }
+            i{
+                font-size: 25px;
+                width: 50px;
+                height: 50px;
+                line-height: 50px;
+            }
+        }

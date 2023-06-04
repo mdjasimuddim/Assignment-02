@@ -1,0 +1,25 @@
+.section-title{
+    width: 700px;
+    margin: 0 auto 70px;
+    h4{
+        font-size: 18px;
+    }
+    h2{
+        text-transform: capitalize;
+        position: relative;
+        font-size: 35px;
+        font-weight: 600;
+        margin-bottom: 15px;
+        padding-bottom: 15px;
+        &:before{
+            width: 60px;
+            height: 2px;
+            position: absolute;
+            content: "";
+            background-color: tomato;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}
